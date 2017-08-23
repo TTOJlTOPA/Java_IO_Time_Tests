@@ -10,7 +10,8 @@ public class Main {
         PrintWriter results = new PrintWriter("results.txt");
 
         System.out.printf("***************%d MB characters write test***************\n", 64);
-        results.printf("***************%d MB characters write test***************\n", 64);
+        results.printf("***************%d MB characters write test***************", 64);
+        results.println();
         writeTests(64, file, results);
         writeTestsBuffer(64, file, 1, results);
         writeTestsBuffer(64, file, 2, results);
@@ -23,7 +24,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters write test***************\n", 128);
-        results.printf("***************%d MB characters write test***************\n", 128);
+        results.printf("***************%d MB characters write test***************", 128);
+        results.println();
         writeTests(128, file, results);
         writeTestsBuffer(128, file, 1, results);
         writeTestsBuffer(128, file, 2, results);
@@ -37,7 +39,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters write test***************\n", 256);
-        results.printf("***************%d MB characters write test***************\n", 256);
+        results.printf("***************%d MB characters write test***************", 256);
+        results.println();
         writeTests(256, file, results);
         writeTestsBuffer(256, file, 2, results);
         writeTestsBuffer(256, file, 4, results);
@@ -50,7 +53,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters write test***************\n", 512);
-        results.printf("***************%d MB characters write test***************\n", 512);
+        results.printf("***************%d MB characters write test***************", 512);
+        results.println();
         writeTests(512, file, results);
         writeTestsBuffer(512, file, 4, results);
         writeTestsBuffer(512, file, 8, results);
@@ -63,7 +67,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters write test***************\n", 1024);
-        results.printf("***************%d MB characters write test***************\n", 1024);
+        results.printf("***************%d MB characters write test***************", 1024);
+        results.println();
         writeTests(1024, file, results);
         writeTestsBuffer(1024, file, 8, results);
         writeTestsBuffer(1024, file, 16, results);
@@ -75,7 +80,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d integers write test***************\n", 64 * 1024 * 1024);
-        results.printf("***************%d integers write test***************\n", 64 * 1024 * 1024);
+        results.printf("***************%d integers write test***************", 64 * 1024 * 1024);
+        results.println();
         writeTestsInteger(64 * 1024 * 1024, file, results);
         writeTestsIntegerBuffer(64 * 1024 * 1024, file, 1, results);
         writeTestsIntegerBuffer(64 * 1024 * 1024, file, 2, results);
@@ -88,7 +94,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d integers write test***************\n", 128 * 1024 * 1024);
-        results.printf("***************%d integers write test***************\n", 128 * 1024 * 1024);
+        results.printf("***************%d integers write test***************", 128 * 1024 * 1024);
+        results.println();
         writeTestsInteger(128 * 1024 * 1024, file, results);
         writeTestsIntegerBuffer(128 * 1024 * 1024, file, 1, results);
         writeTestsIntegerBuffer(128 * 1024 * 1024, file, 2, results);
@@ -101,7 +108,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d integers write test***************\n", 256 * 1024 * 1024);
-        results.printf("***************%d integers write test***************\n", 256 * 1024 * 1024);
+        results.printf("***************%d integers write test***************", 256 * 1024 * 1024);
+        results.println();
         writeTestsInteger(256 * 1024 * 1024, file, results);
         writeTestsIntegerBuffer(256 * 1024 * 1024, file, 2, results);
         writeTestsIntegerBuffer(256 * 1024 * 1024, file, 4, results);
@@ -114,7 +122,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d floats write test***************\n", 64 * 1024 * 1024);
-        results.printf("***************%d floats write test***************\n", 64 * 1024 * 1024);
+        results.printf("***************%d floats write test***************", 64 * 1024 * 1024);
+        results.println();
         writeTestsFloat(64 * 1024 * 1024, file, results);
         writeTestsFloatBuffer(64 * 1024 * 1024, file, 1, results);
         writeTestsFloatBuffer(64 * 1024 * 1024, file, 2, results);
@@ -127,7 +136,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d floats write test***************\n", 128 * 1024 * 1024);
-        results.printf("***************%d floats write test***************\n", 128 * 1024 * 1024);
+        results.printf("***************%d floats write test***************", 128 * 1024 * 1024);
+        results.println();
         writeTestsFloat(128 * 1024 * 1024, file, results);
         writeTestsFloatBuffer(128 * 1024 * 1024, file, 1, results);
         writeTestsFloatBuffer(128 * 1024 * 1024, file, 2, results);
@@ -141,7 +151,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d floats write test***************\n", 256 * 1024 * 1024);
-        results.printf("***************%d floats write test***************\n", 256 * 1024 * 1024);
+        results.printf("***************%d floats write test***************", 256 * 1024 * 1024);
+        results.println();
         writeTestsFloat(256 * 1024 * 1024, file, results);
         writeTestsFloatBuffer(256 * 1024 * 1024, file, 2, results);
         writeTestsFloatBuffer(256 * 1024 * 1024, file, 4, results);
@@ -155,7 +166,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters read test***************\n", 64);
-        results.printf("***************%d MB characters read test***************\n", 64);
+        results.printf("***************%d MB characters read test***************", 64);
+        results.println();
         readTests(64, file, results);
         readTestsBuffer(64, file, 1, results);
         readTestsBuffer(64, file, 2, results);
@@ -168,7 +180,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters read test***************\n", 128);
-        results.printf("***************%d MB characters read test***************\n", 128);
+        results.printf("***************%d MB characters read test***************", 128);
+        results.println();
         readTests(128, file, results);
         readTestsBuffer(128, file, 1, results);
         readTestsBuffer(128, file, 2, results);
@@ -182,7 +195,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters read test***************\n", 256);
-        results.printf("***************%d MB characters read test***************\n", 256);
+        results.printf("***************%d MB characters read test***************", 256);
+        results.println();
         readTests(256, file, results);
         readTestsBuffer(256, file, 2, results);
         readTestsBuffer(256, file, 4, results);
@@ -195,7 +209,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters read test***************\n", 512);
-        results.printf("***************%d MB characters read test***************\n", 512);
+        results.printf("***************%d MB characters read test***************", 512);
+        results.println();
         readTests(512, file, results);
         readTestsBuffer(512, file, 4, results);
         readTestsBuffer(512, file, 8, results);
@@ -208,7 +223,8 @@ public class Main {
         results.println();
 
         System.out.printf("***************%d MB characters read test***************\n", 1024);
-        results.printf("***************%d MB characters read test***************\n", 1024);
+        results.printf("***************%d MB characters read test***************", 1024);
+        results.println();
         readTests(1024, file, results);
         readTestsBuffer(1024, file, 8, results);
         readTestsBuffer(1024, file, 16, results);
@@ -240,14 +256,16 @@ public class Main {
 
     private static void writeResults(double testTime, String test, long testSize, String testType, String ioClass,
                                      double rate, PrintWriter results) {
-        results.printf("Took %.5f seconds to %s %d %s file with %s. Rate: %.1f MB/s\n",
+        results.printf("Took %.5f seconds to %s %d %s file with %s. Rate: %.1f MB/s",
                 testTime, test, testSize, testType, ioClass, rate);
+        results.println();
     }
 
     private static void writeResults(double testTime, String test, long testSize, String testType, String ioClass,
                                      int mbBufferSize, String buffer, double rate, PrintWriter results) {
-        results.printf("Took %.5f seconds to %s %d %s file with %s and %d MB %s. Rate: %.1f MB/s\n",
+        results.printf("Took %.5f seconds to %s %d %s file with %s and %d MB %s. Rate: %.1f MB/s",
                 testTime, test, testSize, testType, ioClass, mbBufferSize, buffer, rate);
+        results.println();
     }
 
     private static void writeTests(int mbNum, File file, PrintWriter results) throws IOException {
